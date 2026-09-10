@@ -1,0 +1,361 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/greg/ontologies/2026/8/cinema_inferred.owl#"
+     xml:base="http://www.semanticweb.org/greg/ontologies/2026/8/cinema_inferred.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cinema="http://www.example.org/cinema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/greg/ontologies/2026/8/cinema_inferred.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/cinema#aJoueDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cinema#aJoueDans">
+        <owl:inverseOf rdf:resource="http://www.example.org/cinema#aPourActeur"/>
+        <rdfs:domain rdf:resource="http://www.example.org/cinema#Acteur"/>
+        <rdfs:range rdf:resource="http://www.example.org/cinema#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cinema#aPourActeur -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cinema#aPourActeur">
+        <rdfs:domain rdf:resource="http://www.example.org/cinema#Film"/>
+        <rdfs:range rdf:resource="http://www.example.org/cinema#Acteur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cinema#aPourFiliale -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cinema#aPourFiliale">
+        <owl:inverseOf rdf:resource="http://www.example.org/cinema#estFilialeDe"/>
+        <rdfs:domain rdf:resource="http://www.example.org/cinema#Studio"/>
+        <rdfs:range rdf:resource="http://www.example.org/cinema#Studio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cinema#aPourGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cinema#aPourGenre">
+        <owl:inverseOf rdf:resource="http://www.example.org/cinema#estDuGenre"/>
+        <rdfs:domain rdf:resource="http://www.example.org/cinema#Film"/>
+        <rdfs:range rdf:resource="http://www.example.org/cinema#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cinema#aPourSuite -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cinema#aPourSuite">
+        <owl:inverseOf rdf:resource="http://www.example.org/cinema#estSuiteDe"/>
+        <rdfs:domain rdf:resource="http://www.example.org/cinema#Film"/>
+        <rdfs:range rdf:resource="http://www.example.org/cinema#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cinema#aProduit -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cinema#aProduit">
+        <owl:inverseOf rdf:resource="http://www.example.org/cinema#estProduitPar"/>
+        <rdfs:domain rdf:resource="http://www.example.org/cinema#Studio"/>
+        <rdfs:range rdf:resource="http://www.example.org/cinema#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cinema#aRealise -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cinema#aRealise">
+        <owl:inverseOf rdf:resource="http://www.example.org/cinema#estRealisePar"/>
+        <rdfs:domain rdf:resource="http://www.example.org/cinema#Realisateur"/>
+        <rdfs:range rdf:resource="http://www.example.org/cinema#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cinema#estDuGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cinema#estDuGenre">
+        <rdfs:domain rdf:resource="http://www.example.org/cinema#Genre"/>
+        <rdfs:range rdf:resource="http://www.example.org/cinema#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cinema#estFilialeDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cinema#estFilialeDe">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/cinema#Studio"/>
+        <rdfs:range rdf:resource="http://www.example.org/cinema#Studio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cinema#estProduitPar -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cinema#estProduitPar">
+        <rdfs:domain rdf:resource="http://www.example.org/cinema#Film"/>
+        <rdfs:range rdf:resource="http://www.example.org/cinema#Studio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cinema#estRealisePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cinema#estRealisePar">
+        <rdfs:domain rdf:resource="http://www.example.org/cinema#Film"/>
+        <rdfs:range rdf:resource="http://www.example.org/cinema#Realisateur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cinema#estSuiteDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cinema#estSuiteDe">
+        <rdfs:domain rdf:resource="http://www.example.org/cinema#Film"/>
+        <rdfs:range rdf:resource="http://www.example.org/cinema#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/cinema#aPourAnnee -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cinema#aPourAnnee">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/cinema#Film"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cinema#aPourIdentifiantIMDB -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cinema#aPourIdentifiantIMDB">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/cinema#Film"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cinema#aPourNom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cinema#aPourNom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/cinema#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cinema#aPourNoteIMDB -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cinema#aPourNoteIMDB">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/cinema#Film"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cinema#aPourTitre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cinema#aPourTitre">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/cinema#Film"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/cinema#Acteur -->
+
+    <owl:Class rdf:about="http://www.example.org/cinema#Acteur">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cinema#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cinema#Film -->
+
+    <owl:Class rdf:about="http://www.example.org/cinema#Film"/>
+    
+
+
+    <!-- http://www.example.org/cinema#Genre -->
+
+    <owl:Class rdf:about="http://www.example.org/cinema#Genre"/>
+    
+
+
+    <!-- http://www.example.org/cinema#Personne -->
+
+    <owl:Class rdf:about="http://www.example.org/cinema#Personne"/>
+    
+
+
+    <!-- http://www.example.org/cinema#Realisateur -->
+
+    <owl:Class rdf:about="http://www.example.org/cinema#Realisateur">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cinema#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cinema#Studio -->
+
+    <owl:Class rdf:about="http://www.example.org/cinema#Studio"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/cinema#ActionGenre -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cinema#ActionGenre">
+        <rdf:type rdf:resource="http://www.example.org/cinema#Genre"/>
+        <cinema:estDuGenre rdf:resource="http://www.example.org/cinema#Inception"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cinema#Casablanca -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cinema#Casablanca">
+        <rdf:type rdf:resource="http://www.example.org/cinema#Film"/>
+        <cinema:aPourAnnee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1942</cinema:aPourAnnee>
+        <cinema:aPourTitre>Casablanca</cinema:aPourTitre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cinema#ChristopherNolan -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cinema#ChristopherNolan">
+        <rdf:type rdf:resource="http://www.example.org/cinema#Personne"/>
+        <rdf:type rdf:resource="http://www.example.org/cinema#Realisateur"/>
+        <cinema:aRealise rdf:resource="http://www.example.org/cinema#Inception"/>
+        <cinema:aPourNom>Christopher Nolan</cinema:aPourNom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cinema#DrameGenre -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cinema#DrameGenre">
+        <rdf:type rdf:resource="http://www.example.org/cinema#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cinema#Inception -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cinema#Inception">
+        <rdf:type rdf:resource="http://www.example.org/cinema#Film"/>
+        <cinema:aPourActeur rdf:resource="http://www.example.org/cinema#LeonardoDiCaprio"/>
+        <cinema:aPourGenre rdf:resource="http://www.example.org/cinema#ActionGenre"/>
+        <cinema:estProduitPar rdf:resource="http://www.example.org/cinema#WarnerBros"/>
+        <cinema:estRealisePar rdf:resource="http://www.example.org/cinema#ChristopherNolan"/>
+        <cinema:aPourAnnee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</cinema:aPourAnnee>
+        <cinema:aPourIdentifiantIMDB>tt1375666</cinema:aPourIdentifiantIMDB>
+        <cinema:aPourNoteIMDB rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.8</cinema:aPourNoteIMDB>
+        <cinema:aPourTitre>Inception</cinema:aPourTitre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cinema#LeonardoDiCaprio -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cinema#LeonardoDiCaprio">
+        <rdf:type rdf:resource="http://www.example.org/cinema#Acteur"/>
+        <rdf:type rdf:resource="http://www.example.org/cinema#Personne"/>
+        <cinema:aJoueDans rdf:resource="http://www.example.org/cinema#Inception"/>
+        <cinema:aPourNom>Leonardo DiCaprio</cinema:aPourNom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cinema#WarnerAnimation -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cinema#WarnerAnimation">
+        <rdf:type rdf:resource="http://www.example.org/cinema#Studio"/>
+        <cinema:estFilialeDe rdf:resource="http://www.example.org/cinema#WarnerBros"/>
+        <cinema:estFilialeDe rdf:resource="http://www.example.org/cinema#WarnerBrosGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cinema#WarnerBros -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cinema#WarnerBros">
+        <rdf:type rdf:resource="http://www.example.org/cinema#Studio"/>
+        <cinema:aPourFiliale rdf:resource="http://www.example.org/cinema#WarnerAnimation"/>
+        <cinema:aProduit rdf:resource="http://www.example.org/cinema#Inception"/>
+        <cinema:estFilialeDe rdf:resource="http://www.example.org/cinema#WarnerBrosGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cinema#WarnerBrosGroup -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cinema#WarnerBrosGroup">
+        <rdf:type rdf:resource="http://www.example.org/cinema#Studio"/>
+        <cinema:aPourFiliale rdf:resource="http://www.example.org/cinema#WarnerAnimation"/>
+        <cinema:aPourFiliale rdf:resource="http://www.example.org/cinema#WarnerBros"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
