@@ -27,7 +27,7 @@ streamvault-semantic-mongodb/
 
 * **Rapport Complet** : Le document [MongoDB_Ontologies_OWLRDF.pdf](./assets/MongoDB_Ontologies_OWLRDF.pdf) regroupe l'ensemble du travail de réalisation pour la Partie 1 (NoSQL) et la Partie 2 (Sémantique).
 
-* **Énoncés Officiels** : Les sujets des deux parties sont disponibles dans [Brief_mongodb_1_partie1.pdf](./assets/Brief_mongodb_1_partie1.pdf) et [brief1_partie2_ontologie_owl_rdf.pdf](./assets/brief1_partie2_ontologie_owl_rdf.pdf).
+* **Énoncés Officiels** : Les sujets des deux parties sont disponibles dans [Brief_mongodb_1_partie1.pdf](./assets/Brief_mongoDB_1_partie1.pdf) et [brief1_partie2_ontologie_owl_rdf.pdf](./assets/brief1_partie2_ontologie_owl_rdf.pdf).
 
 * **Mémo Technique** : Les notes personnelles sur les commandes `mongosh` se trouvent dans [Anatomie_d_une_commande_Mongosh_CLI.pdf](./assets/Anatomie_d_une_commande_Mongosh_CLI.pdf).
 
