@@ -53,8 +53,7 @@ streamvault-semantic-mongodb/
 Etant encore en phase de développement il pourrait ne pas être 100% fonctionnel.
 
 * **Comment l'exécuter** : Place-toi à la racine du dépôt dans ton terminal, puis lance la commande suivante :
-  ```bash
-```python
+  
+```bash 
 python3 scripts/generateur_owl.py
-
 ```
